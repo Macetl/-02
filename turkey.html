@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travello - Турция</title>
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Travello</a>
+            <nav class="nav-menu" id="navMenuTurkey">
+                <a href="index.html">Главная</a>
+                <a href="search.html">Поиск тура</a>
+                <a href="turkey.html">Турция</a>
+                <a href="egypt.html">Египет</a>
+                <a href="thailand.html">Таиланд</a>
+                <a href="hot.html">Горящие</a>
+                <a href="about.html">О нас</a>
+                <a href="blog.html">Блог</a>
+                <a href="#" class="btn-signup" onclick="openModal(); return false;">Войти</a>
+            </nav>
+            <div class="burger" data-target="navMenuTurkey">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" style="margin-top: 40px;">
+            <h1 class="section-title">Турция</h1>
+
+            <div class="destinations-grid">
+                <div class="destination-card" onclick="openModal('Анталия')">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Анталия">
+                    <div class="destination-info"><h3>Анталия</h3><p>от 45 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Кемер')">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Кемер">
+                    <div class="destination-info"><h3>Кемер</h3><p>от 52 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Белек')">
+                    <img src="https://images.unsplash.com/photo-1528215747454-3d0e0902fff2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1332&q=80" alt="Белек">
+                    <div class="destination-info"><h3>Белек</h3><p>от 65 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Аланья')">
+                    <img src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1335&q=80" alt="Аланья">
+                    <div class="destination-info"><h3>Аланья</h3><p>от 40 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Сиде')">
+                    <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80" alt="Сиде">
+                    <div class="destination-info"><h3>Сиде</h3><p>от 48 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Мармарис')">
+                    <img src="https://images.unsplash.com/photo-1553913861-c0fddf2619ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Мармарис">
+                    <div class="destination-info"><h3>Мармарис</h3><p>от 55 000 ₽</p></div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h2>Анталийское побережье</h2>
+                <p>Анталия — курортный регион с развитой инфраструктурой. Здесь находятся такие известные курорты, как Кемер, Белек, Сиде, Аланья. Песчаные и галечные пляжи, множество отелей с системой «всё включено», аквапарки и достопримечательности. Климат средиземноморский, купальный сезон длится с мая по октябрь.</p>
+                <img src="https://images.unsplash.com/photo-1591025207163-942350e47db7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Анталия" style="width:100%; border-radius:20px; margin-top:20px;">
+            </div>
+
+            <div class="content-block">
+                <h2>Отели Турции</h2>
+                <p>В Турции представлены отели мировых цепочек: Rixos, Maxx Royal, Voyage, Delphin, Liberty, Titanic и многие другие. Уровень сервиса высок, питание разнообразное (шведский стол, a'la carte рестораны), есть анимация для детей и взрослых, спа-центры, аквапарки. Многие отели работают по системе Ultra All Inclusive.</p>
+                <ul><li>Rixos Premium Belek - 5*, ультра All Inclusive, аквапарк</li><li>Maxx Royal Kemer - 5*, люкс-класс</li><li>Voyage Belek - 5*, для семей с детьми</li><li>Delphin Imperial - 5*, собственный пляж</li><li>Liberty Hotels Lykia - 5*, огромная территория</li></ul>
+            </div>
+
+            <div class="content-block">
+                <h2>Экскурсии</h2>
+                <p>Популярные экскурсии из Анталии и других курортов:</p>
+                <ul><li><strong>Памуккале</strong> — белые травертины и древний город Иераполис</li><li><strong>Каппадокия</strong> — полёты на воздушных шарах, скальные города</li><li><strong>Демре</strong> — церковь Николая Чудотворца, Мира, Кекова</li><li><strong>Рафтинг</strong> по реке Кёпрючай</li><li><strong>Яхт-тур</strong> по Средиземному морю</li><li><strong>Шоппинг</strong> в Стамбуле или на местных рынках</li></ul>
+            </div>
+
+            <div class="content-block">
+                <h2>Кухня</h2>
+                <p>Турецкая кухня славится кебабами (шиш-кебаб, дёнер), манты, долмой, мезе, пахлавой, рахат-лукумом и чаем. В отелях обычно большой выбор блюд, включая европейскую и турецкую кухню. Рекомендуем попробовать рыбу на побережье, свежие овощи и фрукты. Обязательно отведайте турецкий кофе и яблочный чай.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Когда ехать</h2>
+                <p>Лучшее время для пляжного отдыха — с мая по октябрь. В июле-августе жарко (до +35°C), но море тёплое (+27°C). Для экскурсий подходит весна (апрель-май) и осень (сентябрь-октябрь). Зимой курорты закрыты, но можно посетить Стамбул.</p>
+                <table style="width:100%; margin-top:20px; border-collapse: collapse;"><tr style="background:var(--bg-light);"><th>Месяц</th><th>Температура воздуха</th><th>Температура воды</th></tr><tr><td>Май</td><td>+25°C</td><td>+20°C</td></tr><tr><td>Июнь</td><td>+30°C</td><td>+24°C</td></tr><tr><td>Июль</td><td>+35°C</td><td>+27°C</td></tr><tr><td>Август</td><td>+35°C</td><td>+28°C</td></tr><tr><td>Сентябрь</td><td>+30°C</td><td>+26°C</td></tr><tr><td>Октябрь</td><td>+25°C</td><td>+22°C</td></tr></table>
+            </div>
+
+            <div class="content-block">
+                <h2>Виза</h2>
+                <p>Для граждан России виза в Турцию не требуется при пребывании до 60 дней. Достаточно загранпаспорта, срок действия которого не менее 120 дней на момент въезда.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Транспорт</h2>
+                <p>Из аэропорта Анталии до отелей курортов обычно организуется трансфер (автобус или такси). Внутри курортов можно пользоваться общественным транспортом (долмуши), такси или арендовать автомобиль. Дорожное движение правостороннее. Аренда авто стоит от 30€ в сутки.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Советы туристам</h2>
+                <p>Не забудьте взять с собой солнцезащитный крем, головной убор, средства от комаров. Воду из-под крана пить не рекомендуется, покупайте бутилированную. Торг уместен на рынках и в небольших магазинах. Чаевые в отелях и ресторанах приветствуются (обычно 5-10%).</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3 class="logo">Travello</h3>
+                    <p>Забронируйте поездку за минуту, получите полный контроль над путешествием.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <ul><li><a href="about.html">О нас</a></li><li><a href="#">Карьера</a></li><li><a href="#">Мобильное приложение</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul><li><a href="#">Помощь</a></li><li><a href="#">Пресса</a></li><li><a href="#">Партнерам</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Еще</h4>
+                    <ul><li><a href="#">Тарифы авиакомпаний</a></li><li><a href="#">Авиалинии</a></li><li><a href="#">Советы по перелетам</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Скачайте приложение</h4>
+                    <div class="app-buttons"><a href="#" class="app-button">Google Play</a><a href="#" class="app-button">App Store</a></div>
+                </div>
+            </div>
+            <div class="copyright">Все права защищены © Travello 2025</div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Бронирование тура</h2>
+            <input type="text" placeholder="Ваше имя" id="modalName">
+            <input type="tel" placeholder="Телефон">
+            <input type="text" placeholder="Страна тура" id="modalCountry" readonly>
+            <input type="date">
+            <select><option>2 взрослых</option><option>1 взрослый</option><option>2 взрослых + 1 ребенок</option><option>2 взрослых + 2 детей</option></select>
+            <button class="btn-primary" onclick="submitBooking()">Забронировать</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

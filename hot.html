@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travello - Горящие туры</title>
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Travello</a>
+            <nav class="nav-menu" id="navMenuHot">
+                <a href="index.html">Главная</a>
+                <a href="search.html">Поиск тура</a>
+                <a href="turkey.html">Турция</a>
+                <a href="egypt.html">Египет</a>
+                <a href="thailand.html">Таиланд</a>
+                <a href="hot.html">Горящие</a>
+                <a href="about.html">О нас</a>
+                <a href="blog.html">Блог</a>
+                <a href="#" class="btn-signup" onclick="openModal(); return false;">Войти</a>
+            </nav>
+            <div class="burger" data-target="navMenuHot">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="timer-section">
+            <div class="container">
+                <h2>⚡ ГОРЯЩИЕ ПРЕДЛОЖЕНИЯ ⚡</h2>
+                <p style="font-size: 24px; margin-bottom: 20px;">Скидки до 50% на туры с вылетом на этой неделе</p>
+                <div class="timer" id="timerHot">
+                    <div class="timer-block"><span id="daysHot">02</span><span>Дней</span></div>
+                    <div class="timer-block"><span id="hoursHot">12</span><span>Часов</span></div>
+                    <div class="timer-block"><span id="minutesHot">30</span><span>Минут</span></div>
+                    <div class="timer-block"><span id="secondsHot">15</span><span>Секунд</span></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container" style="margin-top: 40px;">
+            <h1 class="section-title">Актуальные горящие туры</h1>
+
+            <div class="destinations-grid">
+                <div class="destination-card" onclick="openModal('Турция')">
+                    <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80" alt="Турция">
+                    <div class="destination-info"><h3>Турция 🔥 -30%</h3><p>Вылет 25 марта, 7 ночей</p><p style="color: var(--secondary); font-weight:600;">31 500 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Египет')">
+                    <img src="https://images.unsplash.com/photo-1553913861-c0fddf2619ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Египет">
+                    <div class="destination-info"><h3>Египет 🔥 -25%</h3><p>Вылет 26 марта, 8 ночей</p><p style="color: var(--secondary);">38 900 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Таиланд')">
+                    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1339&q=80" alt="Таиланд">
+                    <div class="destination-info"><h3>Таиланд 🔥 -20%</h3><p>Вылет 27 марта, 10 ночей</p><p style="color: var(--secondary);">72 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('ОАЭ')">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="ОАЭ">
+                    <div class="destination-info"><h3>ОАЭ 🔥 -15%</h3><p>Вылет 28 марта, 5 ночей</p><p style="color: var(--secondary);">59 500 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Мальдивы')">
+                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Мальдивы">
+                    <div class="destination-info"><h3>Мальдивы 🔥 -10%</h3><p>Вылет 30 марта, 7 ночей</p><p style="color: var(--secondary);">108 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Греция')">
+                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Греция">
+                    <div class="destination-info"><h3>Греция 🔥 -18%</h3><p>Вылет 1 апреля, 7 ночей</p><p style="color: var(--secondary);">69 800 ₽</p></div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h2>Что такое горящие туры?</h2>
+                <p>Горящие туры – это путевки, которые продаются за 1-7 дней до вылета со скидкой до 50%. Отели и авиакомпании снижают цены, чтобы заполнить свободные места. Вы можете отдохнуть в 5-звездочном отеле по цене 3-звездочного. Лучшие предложения появляются за 2-3 дня до вылета. Будьте готовы к спонтанным путешествиям!</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Как поймать горящий тур</h2>
+                <p>Подпишитесь на нашу рассылку, следите за обновлениями на сайте, имейте загранпаспорт наготове. Горящие туры быстро разбирают, поэтому нужно действовать быстро. Мы предлагаем удобный поиск и мгновенное бронирование.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Преимущества горящих туров</h2>
+                <ul>
+                    <li>Экономия до 50%</li>
+                    <li>Возможность посетить дорогие отели по низкой цене</li>
+                    <li>Спонтанность и адреналин</li>
+                    <li>Часто включены перелёт и страховка</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h2>Недостатки</h2>
+                <p>Выбор ограничен, нет времени на долгую подготовку, может не быть мест в желаемом отеле. Но для тех, кто любит приключения, это отличный вариант.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Советы для охотников за горящими турами</h2>
+                <p>Будьте гибкими в датах и вылете. Часто туры из регионов (Казань, Екатеринбург) дешевле, чем из Москвы. Проверяйте наличие визы: для Турции, Египта, Таиланда виза не нужна, это упрощает спонтанные поездки. Не бойтесь бронировать туры за 1-2 дня – отели и авиакомпании в последний момент дают максимальные скидки.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Примеры экономии</h2>
+                <p>В прошлом месяце наши клиенты сэкономили: Турция – до 40 000 ₽ на туре, Египет – до 35 000 ₽, Таиланд – до 60 000 ₽. Следите за акциями!</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Часто задаваемые вопросы</h2>
+                <p><strong>❓ Могу ли я вернуть деньги, если передумал?</strong> – Условия возврата зависят от правил туроператора, обычно при отказе за 2-3 дня до вылета возврат невозможен.<br>
+                <strong>❓ Нужна ли страховка для горящего тура?</strong> – Мы рекомендуем оформлять страховку всегда, даже для спонтанных поездок.<br>
+                <strong>❓ Можно ли взять в кредит?</strong> – Да, мы предлагаем рассрочку 0% на любые туры.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3 class="logo">Travello</h3>
+                    <p>Забронируйте поездку за минуту, получите полный контроль над путешествием.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <ul><li><a href="about.html">О нас</a></li><li><a href="#">Карьера</a></li><li><a href="#">Мобильное приложение</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul><li><a href="#">Помощь</a></li><li><a href="#">Пресса</a></li><li><a href="#">Партнерам</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Еще</h4>
+                    <ul><li><a href="#">Тарифы авиакомпаний</a></li><li><a href="#">Авиалинии</a></li><li><a href="#">Советы по перелетам</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Скачайте приложение</h4>
+                    <div class="app-buttons"><a href="#" class="app-button">Google Play</a><a href="#" class="app-button">App Store</a></div>
+                </div>
+            </div>
+            <div class="copyright">Все права защищены © Travello 2025</div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Бронирование тура</h2>
+            <input type="text" placeholder="Ваше имя" id="modalName">
+            <input type="tel" placeholder="Телефон">
+            <input type="text" placeholder="Страна тура" id="modalCountry" readonly>
+            <input type="date">
+            <select><option>2 взрослых</option><option>1 взрослый</option><option>2 взрослых + 1 ребенок</option><option>2 взрослых + 2 детей</option></select>
+            <button class="btn-primary" onclick="submitBooking()">Забронировать</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

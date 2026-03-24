@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travello - Таиланд</title>
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Travello</a>
+            <nav class="nav-menu" id="navMenuThailand">
+                <a href="index.html">Главная</a>
+                <a href="search.html">Поиск тура</a>
+                <a href="turkey.html">Турция</a>
+                <a href="egypt.html">Египет</a>
+                <a href="thailand.html">Таиланд</a>
+                <a href="hot.html">Горящие</a>
+                <a href="about.html">О нас</a>
+                <a href="blog.html">Блог</a>
+                <a href="#" class="btn-signup" onclick="openModal(); return false;">Войти</a>
+            </nav>
+            <div class="burger" data-target="navMenuThailand">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" style="margin-top: 40px;">
+            <h1 class="section-title">Таиланд</h1>
+
+            <!-- Курорты -->
+            <div class="destinations-grid">
+                <div class="destination-card" onclick="openModal('Пхукет')">
+                    <img src="https://images.unsplash.com/photo-1537996192471-5f92c497d3c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Пхукет">
+                    <div class="destination-info"><h3>Пхукет</h3><p>от 95 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Самуи')">
+                    <img src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1335&q=80" alt="Самуи">
+                    <div class="destination-info"><h3>Самуи</h3><p>от 110 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Паттайя')">
+                    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1339&q=80" alt="Паттайя">
+                    <div class="destination-info"><h3>Паттайя</h3><p>от 80 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Краби')">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Краби">
+                    <div class="destination-info"><h3>Краби</h3><p>от 105 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Пхи-Пхи')">
+                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Пхи-Пхи">
+                    <div class="destination-info"><h3>Пхи-Пхи</h3><p>от 120 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Бангкок')">
+                    <img src="https://images.unsplash.com/photo-1508009603885-50b6cba3a9c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Бангкок">
+                    <div class="destination-info"><h3>Бангкок</h3><p>от 70 000 ₽</p></div>
+                </div>
+            </div>
+
+            <!-- Контент -->
+            <div class="content-block">
+                <h2>Острова</h2>
+                <p>Пхукет, Самуи, Краби, Пхи-Пхи – белоснежные пляжи и бирюзовая вода.</p>
+                <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1368&q=80" alt="Пляж" style="width:100%; border-radius:20px;">
+            </div>
+            <div class="content-block"><h2>Отели</h2><p>Banyan Tree, Four Seasons, Anantara, Centara.</p></div>
+            <div class="content-block"><h2>Достопримечательности</h2><p>Храмы, слоны, шоу трансвеститов, остров Джеймса Бонда.</p></div>
+            <div class="content-block"><h2>Кухня</h2><p>Том ям, пад тай, массаман карри, клейкий рис с манго.</p></div>
+            <div class="content-block"><h2>Когда ехать</h2><p>Ноябрь-март – сухой сезон. Остальное время – кратковременные дожди.</p></div>
+            <div class="content-block"><h2>Виза</h2><p>Безвизовый въезд до 30 дней.</p></div>
+        </div>
+    </main>
+
+    <footer class="site-footer">...</footer>
+    <div class="modal-overlay" id="modalOverlay">...</div>
+    <script src="js/script.js"></script>
+</body>
+</html>

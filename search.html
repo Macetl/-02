@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travello - Поиск тура</title>
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Travello</a>
+            <nav class="nav-menu" id="navMenuSearch">
+                <a href="index.html">Главная</a>
+                <a href="search.html">Поиск тура</a>
+                <a href="turkey.html">Турция</a>
+                <a href="egypt.html">Египет</a>
+                <a href="thailand.html">Таиланд</a>
+                <a href="hot.html">Горящие</a>
+                <a href="about.html">О нас</a>
+                <a href="blog.html">Блог</a>
+                <a href="#" class="btn-signup" onclick="openModal(); return false;">Войти</a>
+            </nav>
+            <div class="burger" data-target="navMenuSearch">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" style="margin-top: 40px;">
+            <h1 class="section-title">Поиск идеального тура</h1>
+
+            <!-- Расширенная форма поиска (калькулятор) -->
+            <div class="calculator-card" style="max-width: 800px;">
+                <h3>Подберите тур своей мечты</h3>
+                <select id="calcCountry">
+                    <option value="300">Турция (300$ за ночь)</option>
+                    <option value="350">Египет (350$ за ночь)</option>
+                    <option value="450">Таиланд (450$ за ночь)</option>
+                    <option value="400">ОАЭ (400$ за ночь)</option>
+                    <option value="500">Мальдивы (500$ за ночь)</option>
+                </select>
+                <input type="number" id="calcNights" placeholder="Количество ночей" value="7">
+                <input type="number" id="calcPersons" placeholder="Количество человек" value="2">
+                <button class="btn-primary" style="width: 100%;" onclick="calculatePrice()">Рассчитать стоимость</button>
+                <div class="calculator-result" id="calcResult">4 200 $</div>
+            </div>
+
+            <!-- Результаты поиска (популярные направления) -->
+            <h2 class="section-title" style="margin-top: 60px;">Популярные направления</h2>
+            <div class="destinations-grid">
+                <div class="destination-card" onclick="openModal('Турция, Анталия')">
+                    <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-4.0.3&auto=format&fit=crop&w=1471&q=80" alt="Турция">
+                    <div class="destination-info"><h3>Турция, Анталия</h3><p>от 45 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Египет, Хургада')">
+                    <img src="https://images.unsplash.com/photo-1553913861-c0fddf2619ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Египет">
+                    <div class="destination-info"><h3>Египет, Хургада</h3><p>от 50 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Таиланд, Пхукет')">
+                    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1339&q=80" alt="Таиланд">
+                    <div class="destination-info"><h3>Таиланд, Пхукет</h3><p>от 65 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('ОАЭ, Дубай')">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="ОАЭ">
+                    <div class="destination-info"><h3>ОАЭ, Дубай</h3><p>от 70 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Мальдивы, Мале')">
+                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Мальдивы">
+                    <div class="destination-info"><h3>Мальдивы, Мале</h3><p>от 120 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Греция, Крит')">
+                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Греция">
+                    <div class="destination-info"><h3>Греция, Крит</h3><p>от 85 000 ₽</p></div>
+                </div>
+            </div>
+
+            <!-- Контентные блоки для высоты -->
+            <div class="content-block">
+                <h2>Как выбрать тур</h2>
+                <p>1. Определите бюджет и даты. 2. Выберите страну и курорт. 3. Уточните категорию отеля и тип питания. 4. Проверьте наличие визы и срок действия паспорта. 5. Внимательно прочитайте договор перед оплатой. Наши менеджеры всегда готовы помочь вам с выбором!</p>
+                <p>Мы собрали для вас полезные советы, которые сделают ваше путешествие комфортным и безопасным. Например, всегда оформляйте страховку, даже если едете в безвизовую страну. Копии документов храните отдельно от оригиналов. Уточните заранее, нужны ли прививки для посещения некоторых стран (например, для въезда в некоторые страны Африки и Южной Америки требуется вакцинация от жёлтой лихорадки).</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Популярные вопросы</h2>
+                <p><strong>❓ Нужна ли виза в Турцию?</strong> – Нет, до 60 дней.<br>
+                <strong>❓ Можно ли вернуть деньги при отказе?</strong> – Да, согласно условиям договора. Обычно при отказе за 14 дней и более – возврат полной стоимости, за 7-14 дней – штраф 25%, менее 7 дней – 50%.<br>
+                <strong>❓ Какие документы нужны для ребенка?</strong> – Загранпаспорт и свидетельство о рождении. Если ребенок едет с одним из родителей, нотариальное согласие от второго родителя.<br>
+                <strong>❓ Когда лучше бронировать?</strong> – За 2-3 месяца для лучших цен, или ловите горящие туры за 1-2 недели до вылета.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Советы туристам</h2>
+                <p>Не забудьте: страховка, копии документов, международные права, аптечка, адаптер для розеток. Фотографируйте содержимое чемодана перед вылетом – пригодится для страховой в случае потери багажа. Узнайте заранее о местных обычаях и правилах поведения – это поможет избежать неприятных ситуаций. В некоторых странах строгие правила дресс-кода при посещении храмов. Также уточните, можно ли пить водопроводную воду – в большинстве азиатских стран это не рекомендуется.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Лучшие предложения месяца</h2>
+                <p>Турция 7 ночей от 45 000 ₽, Египет 8 ночей от 50 000 ₽, Таиланд 10 ночей от 70 000 ₽. Горящие туры в Европу со скидкой до 40%. Специальные цены на раннее бронирование лета 2025 – успейте забронировать по лучшей цене! При бронировании тура от 100 000 рублей – экскурсия в подарок.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Почему мы?</h2>
+                <p>Работаем с 2010 года, более 15 000 довольных клиентов, лучшие цены от всех туроператоров, рассрочка 0%, поддержка 24/7. Мы не берём скрытых комиссий и всегда предлагаем честные цены. Наши менеджеры сами путешествуют и могут дать рекомендации, основанные на личном опыте.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Сравнение отелей</h2>
+                <p>Перед бронированием обязательно сравните отели по рейтингу, отзывам, расположению и питанию. Мы собрали для вас подборку лучших отелей в каждом направлении. Например, в Турции: Rixos Premium, Maxx Royal, Voyage; в Египте: Steigenberger, Rixos, Baron Palace; в Таиланде: Banyan Tree, Four Seasons, Anantara.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Трансферы</h2>
+                <p>Мы предлагаем удобные трансферы из аэропорта до отеля. Вы можете выбрать индивидуальный трансфер или групповой. Все водители говорят на русском языке, автомобили комфортабельные. Цены фиксированные, без скрытых доплат.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>Экскурсии</h2>
+                <p>У нас вы можете заказать любые экскурсии: от обзорных туров до индивидуальных приключений. Работаем только с лицензированными гидами. Цены ниже, чем у туроператоров на месте.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3 class="logo">Travello</h3>
+                    <p>Забронируйте поездку за минуту, получите полный контроль над путешествием.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <ul><li><a href="about.html">О нас</a></li><li><a href="#">Карьера</a></li><li><a href="#">Мобильное приложение</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul><li><a href="#">Помощь</a></li><li><a href="#">Пресса</a></li><li><a href="#">Партнерам</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Еще</h4>
+                    <ul><li><a href="#">Тарифы авиакомпаний</a></li><li><a href="#">Авиалинии</a></li><li><a href="#">Советы по перелетам</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Скачайте приложение</h4>
+                    <div class="app-buttons"><a href="#" class="app-button">Google Play</a><a href="#" class="app-button">App Store</a></div>
+                </div>
+            </div>
+            <div class="copyright">Все права защищены © Travello 2025</div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Бронирование тура</h2>
+            <input type="text" placeholder="Ваше имя" id="modalName">
+            <input type="tel" placeholder="Телефон">
+            <input type="text" placeholder="Страна тура" id="modalCountry" readonly>
+            <input type="date">
+            <select><option>2 взрослых</option><option>1 взрослый</option><option>2 взрослых + 1 ребенок</option><option>2 взрослых + 2 детей</option></select>
+            <button class="btn-primary" onclick="submitBooking()">Забронировать</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

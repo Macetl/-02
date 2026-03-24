@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travello - Египет</title>
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Travello</a>
+            <nav class="nav-menu" id="navMenuEgypt">
+                <a href="index.html">Главная</a>
+                <a href="search.html">Поиск тура</a>
+                <a href="turkey.html">Турция</a>
+                <a href="egypt.html">Египет</a>
+                <a href="thailand.html">Таиланд</a>
+                <a href="hot.html">Горящие</a>
+                <a href="about.html">О нас</a>
+                <a href="blog.html">Блог</a>
+                <a href="#" class="btn-signup" onclick="openModal(); return false;">Войти</a>
+            </nav>
+            <div class="burger" data-target="navMenuEgypt">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" style="margin-top: 40px;">
+            <h1 class="section-title">Египет</h1>
+
+            <!-- Курорты -->
+            <div class="destinations-grid">
+                <div class="destination-card" onclick="openModal('Хургада')">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Хургада">
+                    <div class="destination-info"><h3>Хургада</h3><p>от 50 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Шарм-эль-Шейх')">
+                    <img src="https://images.unsplash.com/photo-1528215747454-3d0e0902fff2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1332&q=80" alt="Шарм">
+                    <div class="destination-info"><h3>Шарм-эль-Шейх</h3><p>от 60 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Дахаб')">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Дахаб">
+                    <div class="destination-info"><h3>Дахаб</h3><p>от 45 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Марса-Алам')">
+                    <img src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1335&q=80" alt="Марса-Алам">
+                    <div class="destination-info"><h3>Марса-Алам</h3><p>от 70 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Таба')">
+                    <img src="https://images.unsplash.com/photo-1553913861-c0fddf2619ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Таба">
+                    <div class="destination-info"><h3>Таба</h3><p>от 55 000 ₽</p></div>
+                </div>
+                <div class="destination-card" onclick="openModal('Каир')">
+                    <img src="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Каир">
+                    <div class="destination-info"><h3>Каир</h3><p>от 40 000 ₽</p></div>
+                </div>
+            </div>
+
+            <!-- Контент -->
+            <div class="content-block">
+                <h2>Красное море</h2>
+                <p>Идеально для дайвинга и снорклинга. Коралловые рифы и богатая морская жизнь.</p>
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Красное море" style="width:100%; border-radius:20px;">
+            </div>
+            <div class="content-block">
+                <h2>Отели</h2>
+                <p>Steigenberger, Rixos, Jaz, Baron Palace. Система "всё включено".</p>
+            </div>
+            <div class="content-block">
+                <h2>Достопримечательности</h2>
+                <p>Пирамиды Гизы, Сфинкс, Луксор, Долина царей, сафари.</p>
+            </div>
+            <div class="content-block">
+                <h2>Кухня</h2>
+                <p>Фалафель, хумус, кус-кус, кебаб, каркаде.</p>
+            </div>
+            <div class="content-block">
+                <h2>Когда ехать</h2>
+                <p>Март-май, сентябрь-ноябрь. Летом до +40°C.</p>
+            </div>
+            <div class="content-block">
+                <h2>Виза</h2>
+                <p>По прибытии 25$ или электронная.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">...</footer> <!-- полностью как на главной -->
+    <div class="modal-overlay" id="modalOverlay">...</div> <!-- полностью -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travello - Главная</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Travello</a>
+            <nav class="nav-menu" id="navMenuIndex">
+                <a href="index.html">Главная</a>
+                <a href="search.html">Поиск тура</a>
+                <a href="turkey.html">Турция</a>
+                <a href="egypt.html">Египет</a>
+                <a href="thailand.html">Таиланд</a>
+                <a href="hot.html">Горящие</a>
+                <a href="about.html">О нас</a>
+                <a href="blog.html">Блог</a>
+                <a href="#" class="btn-signup" onclick="openModal(); return false;">Войти</a>
+            </nav>
+            <div class="burger" data-target="navMenuIndex">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero секция -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <div class="subtitle">ЛУЧШИЕ НАПРАВЛЕНИЯ МИРА</div>
+                    <h1>Путешествуй, наслаждайся и живи полной жизнью</h1>
+                    <p>Открой для себя удивительные места, познакомься с новой культурой и создай незабываемые воспоминания. Мы поможем сделать твое путешествие идеальным.</p>
+                    <div class="hero-buttons">
+                        <a href="search.html" class="btn-primary">Узнать больше</a>
+                        <a href="#" class="btn-play" onclick="alert('Демо-видео о путешествиях'); return false;">
+                            <span class="play-icon">▶</span>
+                            Смотреть видео
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="pngwing.com.png" alt="Путешественник">
+                </div>
+            </div>
+        </section>
+
+        <!-- Сервисы -->
+        <section class="services">
+            <div class="container">
+                <div class="section-subtitle">КАТЕГОРИИ</div>
+                <h2 class="section-title">Мы предлагаем лучшие услуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">☁️</div>
+                        <h3>Прогноз погоды</h3>
+                        <p>Точный прогноз на время вашего путешествия в любую точку мира</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">✈️</div>
+                        <h3>Лучшие авиабилеты</h3>
+                        <p>Подберем самые выгодные варианты перелетов от всех авиакомпаний</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎉</div>
+                        <h3>Местные события</h3>
+                        <p>Узнайте о фестивалях и праздниках в стране отдыха</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>Индивидуальные туры</h3>
+                        <p>Разработаем маршрут специально для вас</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Топ направления -->
+        <section class="destinations">
+            <div class="container">
+                <div class="section-subtitle">ПРОДАЖИ</div>
+                <h2 class="section-title">Лучшие направления</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card" onclick="openModal('Рим, Италия')">
+                        <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1396&q=80" alt="Рим">
+                        <div class="destination-info">
+                            <div class="destination-header">
+                                <h3>Рим, Италия</h3>
+                                <span class="price">5,42 млн ₽</span>
+                            </div>
+                            <div class="destination-duration">
+                                <span>✈️</span> 10 дней
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-card" onclick="openModal('Лондон, Великобритания')">
+                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Лондон">
+                        <div class="destination-info">
+                            <div class="destination-header">
+                                <h3>Лондон, Великобритания</h3>
+                                <span class="price">4,2 млн ₽</span>
+                            </div>
+                            <div class="destination-duration">
+                                <span>✈️</span> 12 дней
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-card" onclick="openModal('Тур по Европе')">
+                        <img src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?ixlib=rb-4.0.3&auto=format&fit=crop&w=1482&q=80" alt="Европа">
+                        <div class="destination-info">
+                            <div class="destination-header">
+                                <h3>Тур по Европе</h3>
+                                <span class="price">15 млн ₽</span>
+                            </div>
+                            <div class="destination-duration">
+                                <span>✈️</span> 28 дней
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Шаги бронирования -->
+        <section class="booking-steps">
+            <div class="container steps-content">
+                <div class="steps-text">
+                    <div class="section-subtitle">ПРОСТО И БЫСТРО</div>
+                    <h2 class="section-title" style="text-align: left;">Забронируйте поездку за 3 простых шага</h2>
+                    <ul class="steps-list">
+                        <li class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-text">
+                                <h3>Выберите направление</h3>
+                                <p>Выберите страну, город и отель, которые соответствуют вашим желаниям</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-text">
+                                <h3>Оплатите</h3>
+                                <p>Безопасная оплата любым удобным способом, рассрочка 0%</p>
+                            </div>
+                        </li>
+                        <li class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-text">
+                                <h3>Прибудьте в аэропорт</h3>
+                                <p>В назначенную дату вас будет ждать трансфер до отеля</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trip-card">
+                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Греция">
+                    <h3>Путешествие в Грецию</h3>
+                    <div class="trip-info">
+                        <span>14-29 июня</span>
+                        <span>|</span>
+                        <span>от Роббин Дж.</span>
+                    </div>
+                    <div class="trip-progress">
+                        <span>В процессе</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <div class="people-count">
+                        <span>🧑‍🤝‍🧑</span>
+                        24 человека уже едут
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="testimonials">
+            <div class="container testimonials-content">
+                <div class="testimonials-text">
+                    <div class="section-subtitle">ОТЗЫВЫ</div>
+                    <h2 class="section-title" style="text-align: left;">Что говорят о нас</h2>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Михаил">
+                    </div>
+                    <p>"Отличная компания! Всё организовано на высшем уровне. Отдых в Турции превзошёл все ожидания. Обязательно обращусь ещё!"</p>
+                    <div class="testimonial-author">
+                        <h4>Михаил Иванов</h4>
+                        <p>Москва, Россия</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Партнеры -->
+        <section class="partners">
+            <div class="container partners-grid">
+                <span class="partner-item">Аэрофлот</span>
+                <span class="partner-item">S7 Airlines</span>
+                <span class="partner-item">РЖД</span>
+                <span class="partner-item">Intourist</span>
+            </div>
+        </section>
+
+        <!-- Подписка -->
+        <section class="subscribe">
+            <div class="container subscribe-content">
+                <h2>Подпишитесь, чтобы получать информацию о лучших предложениях и новостях Travello</h2>
+                <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Вы подписались на рассылку!');">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Контент для растяжки -->
+        <div class="container">
+            <div class="content-block">
+                <h2>Почему выбирают Travello?</h2>
+                <p>Мы предлагаем лучшие цены на рынке, индивидуальный подход к каждому клиенту и полную поддержку на всех этапах путешествия. Наши менеджеры сами объездили полмира и знают о каждой стране всё. Более 5000 довольных клиентов уже отдохнули с нами.</p>
+            </div>
+            <div class="content-block">
+                <h2>Специальные предложения</h2>
+                <p>Только в этом месяце: раннее бронирование лета 2025 со скидкой до 40%! Бесплатная страховка для всех туристов. Детям до 12 лет - авиабилет бесплатно! При бронировании тура от 100 000 рублей - экскурсия в подарок.</p>
+            </div>
+            <div class="content-block">
+                <h2>Полезные советы</h2>
+                <p>Как сэкономить на отеле? Когда лучше бронировать билеты? Какие документы нужны для визы? Читайте в нашем блоге и будьте готовы к путешествию на все 100%! Подписывайтесь на наши соцсети и получайте полезные материалы каждый день.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3 class="logo">Travello</h3>
+                    <p>Забронируйте поездку за минуту, получите полный контроль над путешествием.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Мобильное приложение</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Пресса</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Еще</h4>
+                    <ul>
+                        <li><a href="#">Тарифы авиакомпаний</a></li>
+                        <li><a href="#">Авиалинии</a></li>
+                        <li><a href="#">Советы по перелетам</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Скачайте приложение</h4>
+                    <div class="app-buttons">
+                        <a href="#" class="app-button">Google Play</a>
+                        <a href="#" class="app-button">App Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                Все права защищены © Travello 2025
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Бронирование тура</h2>
+            <input type="text" placeholder="Ваше имя" id="modalName">
+            <input type="tel" placeholder="Телефон">
+            <input type="text" placeholder="Страна тура" id="modalCountry" readonly>
+            <input type="date">
+            <select>
+                <option>2 взрослых</option>
+                <option>1 взрослый</option>
+                <option>2 взрослых + 1 ребенок</option>
+                <option>2 взрослых + 2 детей</option>
+            </select>
+            <button class="btn-primary" onclick="submitBooking()">Забронировать</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
